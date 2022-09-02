@@ -1,0 +1,51 @@
+/* 2. make_trx */
+.trx {
+    opacity: 1;
+}
+.stats-box {
+    height: var(--stats-box-height);
+    opacity: 1;
+}
+.trx-flow .item {
+    opacity: 1;
+}
+
+/* 3. mining */
+.mining {
+    opacity: 0;
+}
+.base_card.mining {
+    width: 900px;
+}
+
+.network-box {
+    display: flex;
+    padding: 0px 50px;
+}
+.network-box .network {
+    width: 500px;
+    height: 400px;
+    margin-left: 50px;
+    background-image: url("../images/network.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.network-box .minor-box {
+    display: flex;
+    padding: 10px;
+    height: 33%;
+}
+.network-box .minor {
+    margin: 0px 10px;
+}
+.network-box .mempool {
+    width: 250px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #7525;
+}
+.mempool-txt {
+    margin-top: 5px;
+    text-align: center;
+    opacity: 0;
+}

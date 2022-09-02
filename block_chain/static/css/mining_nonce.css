@@ -1,0 +1,57 @@
+/* 3. mining */
+.mining {
+    opacity: 1;
+}
+.network-box .network {
+    background-image: url("../images/network_stop.png");
+}
+.mempool-txt {
+    opacity: 1;
+}
+/* 4. mining_nonce */
+.mining_nonce {
+    opacity: 0;
+    width: 900px;
+}
+
+
+/* block header table */
+.mining_nonce .stats-box {
+    margin: 30px;
+    height: auto;
+    border: 2px solid var(--brown);
+}
+.mining_nonce .stats strong{
+	display: block;
+	color: var(--brown);
+	font-size: 15px;
+	font-weight: 700;
+    margin: 0px 0px 10px;
+}
+.mining_nonce .stats{
+	border-top:1px solid #ebeff2;
+	background:#ffffff;
+	overflow:auto;
+	padding:15px 0;
+	font-size:16px;
+	color:#59687f;
+	font-weight:600;
+	border-radius: 0 0 5px 5px;
+}
+.mining_nonce .stats div{
+	border-right:1px solid #ebeff2;
+	width: 33.3%;
+	float:left;
+	text-align:center
+}
+.mining_nonce .stats div:nth-of-type(3){border:none;}
+.nonce {
+    color: #d64c52;
+}
+
+.hash-target {
+    text-align:center;
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--brown);
+}

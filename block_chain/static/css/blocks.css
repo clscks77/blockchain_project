@@ -1,0 +1,121 @@
+.mining_nonce {
+    opacity: 1;
+}
+
+.blocks {
+    opacity: 0;
+    width: auto;
+    height: 550px;
+}
+.blocks_chain {
+    position: relative;
+}
+
+.blocks_chain .swiper-container {
+    width: 800px;
+    /* width: calc(100% - 50px); */
+    height: 300px;
+    position: absolute;
+    left: 27%; 
+    top: 10px;
+}
+
+.blocks_chain .swiper-slide {
+    opacity: .2;
+    background-image: url("../images/blocks_background_plus.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 10px;
+    /* transition: opacity 1s; */
+    position: relative;
+}
+.blocks_chain .swiper-slide:last-child {
+    opacity: 0;
+    background-image: url("../images/blocks_background_last.png");
+}
+.blocks_chain .swiper-slide-active {
+    opacity: 1;
+}
+
+.blocks_chain .swiper-slide .btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.blocks_chain .swiper-pagination {
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+.blocks_chain .swiper-pagination .swiper-pagination-bullet {
+    background-color: transparent;
+    /* background-image: url("../images/blocks_background.png"); */
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+    outline: none;
+}
+
+.blocks_chain .swiper-pagination .swiper-pagination-bullet:last-child {
+    margin-right: 0;
+}
+
+.blocks_chain .swiper-pagination .swiper-pagination-bullet-active {
+    /* background-image: url("../images/blocks_chain_slide_pager_on.png"); */
+}
+
+.blocks_chain .swiper-prev,
+.blocks_chain .swiper-next {
+    width: 42px;
+    height: 42px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 330px;
+    z-index: 1;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+.blocks_chain .swiper-prev {
+    left: 50%;
+    margin-left: -480px;
+}
+
+.blocks_chain .swiper-next {
+    right: 50%;
+    margin-right: -480px;
+}
+
+.blocks_chain .swiper-prev:hover,
+.blocks_chain .swiper-next:hover {
+    background-color: #333;
+    color: #fff;
+}
+.blocks-btn {
+    top: 350px;
+}
+.block-box {
+    width: 180px;
+    margin-left: 65px;
+    margin-top: 80px;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left {
+    margin: auto;
+}
+.right {
+    margin: auto;
+    line-height: 2.8;
+}

@@ -1,0 +1,55 @@
+{% extends '/mining.html'%}
+
+{% block head %}
+    <!--   3.   -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/make_trx.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mining.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mining_nonce.css') }}" />
+    <script defer src="{{ url_for('static', filename='js/mining_nonce.js') }}"></script>
+{% endblock %}
+
+{% block section4 %}
+    <!-- 4. -->
+    <div class="base_card mining_nonce">
+        <h2>4. Nonce 찾기</h2>
+            <div class="stats-box">
+                <div class="stats">
+                    <div>
+                        <strong>버전</strong> 1
+                    </div>
+                    <div>
+                        <strong>이전 블록 포인터</strong> 2
+                    </div>
+                    <div>
+                        <strong>Merkle Root</strong> 3
+                    </div>
+                </div>
+
+                <div class="stats">
+                    <div>
+                        <strong>블록 생성 시간</strong> 4
+                    </div>
+                    <div>
+                        <strong>채굴 난이도</strong> 5
+                    </div>
+                    <div class="nonce">
+                        <strong>Nonce</strong> 6
+                        {{value}}
+                    </div>
+                </div>
+            </div>
+            <div class="hash-target">
+                → HASH : ㅁㅁㅁ<br/>
+                > TARGET : ㅁㅁㅁ
+            </div>
+            <!-- button -->
+            <form>
+                <div class="footer">
+                    <a href="/blocks" class="btn btn-brown">확인</a>
+                </div>
+            </form>
+    </div>
+{% endblock %}
+
+{% block section5 %}
+{% endblock %}

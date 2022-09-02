@@ -1,0 +1,110 @@
+{% extends '/index.html'%}
+
+{% block head %}
+    <!--   2.   -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/make_trx.css') }}" />
+    <script defer src="{{ url_for('static', filename='js/make_trx.js') }}"></script>
+{% endblock %}
+
+{% block section2 %}
+    <!--   2.   -->
+    <div class="base_card trx">
+        <h2>2. 트랜젝션 생성</h2>
+        <!-- trx in-out animation -->
+        <div class="trx-box">
+            <div class="box-title">
+                Transaction(Me→A)
+            </div>
+            <div class="box-body"></div>
+            <div class="box-footer">
+                <div class="in">IN</div>
+                <div class="out">OUT</div>
+            </div>
+            <div class=trx-flow>
+                <div class=in>
+                    <div class=item_wrapper>
+                        <div class="item txt">UTXO</div>
+                        <div class="item num">1000</div>
+                    </div>
+                </div>
+                <div class=out>
+                    <div class=item_wrapper>
+                        <div class="item num">{{fee}}</div>
+                        <div class="item txt">MINOR</div>
+                    </div>
+                    <div class=item_wrapper>
+                        <div class="item num">{{amount}}</div>
+                        <div class="item txt">A</div>
+                    </div>
+                    <div class=item_wrapper>
+                        <div class="item num">{{balance}}</div>
+                        <div class="item txt">ME</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- trx format table -->
+        <div class="stats-box">
+            <div class="stats">
+                <div>
+                    <strong>버전</strong> 1
+                </div>
+                <div>
+                    <strong>input 개수</strong> 1
+                </div>
+                <div>
+                    <strong>input 포인터</strong> @TODO utxo 트랜젝션 id 
+                </div>
+                <div>
+                    <strong>UTXO 번호</strong> 1
+                </div>
+            </div>
+
+            <div class="stats">
+                <div>
+                    <strong>입력 검증 데이터 길이</strong> @TODO
+                </div>
+                <div>
+                    <strong>입력 검증 데이터</strong> @TODO
+                </div>
+                <div>
+                    <strong>X</strong> 0
+                </div>
+                <div>
+                    <strong>output 개수</strong> 3
+                </div>
+            </div>
+
+            <div class="stats">
+                <div>
+                    <strong>송금액</strong> {{amount}}
+                </div>
+                <div>
+                    <strong>출력 검증 데이터</strong> @TODO
+                </div>
+                <div>
+                    <strong>A의 공개키</strong> {{publicKey}}
+                </div>
+                <div>
+                    <strong>채굴 제한 시간</strong> 0
+                </div>
+            </div>
+        </div>
+        <!-- button -->
+        <form>
+            <div class="footer">
+                <a href="/mining" class="btn btn-brown">확인</a>
+                <!-- <input type="submit" value="송금" /> -->
+            </div>
+        </form>
+    </div>
+{% endblock %}
+
+{% block section3 %}
+{% endblock %}
+
+{% block section4 %}
+{% endblock %}
+
+{% block section5 %}
+{% endblock %}

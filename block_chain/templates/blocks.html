@@ -1,0 +1,58 @@
+{% extends '/mining_nonce.html'%}
+
+{% block head %}
+    <!--   5.   -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/make_trx.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mining.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mining_nonce.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/blocks.css') }}" />
+    <script defer src="{{ url_for('static', filename='js/blocks.js') }}"></script>
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+{% endblock %}
+
+{% block section5 %}
+    <!-- 5. -->
+    <div class="base_card blocks">
+        <h2>5. 블록 연결</h2>
+            <div class="blocks_chain">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <!-- -->
+                  <div class="swiper-slide">
+                  </div> 
+                  <div class="swiper-slide">
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="block-box">
+                          <div class="left">
+                              1
+                          </div>
+                          <div class="right">
+                              2<br/>
+                              3<br/>
+                              4<br/>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- {% for block in blocks %} -->
+                  <!-- {% endfor %} -->
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-prev">
+                <div class="material-icons">arrow_back</div>
+              </div>
+              <div class="swiper-next">
+                <div class="material-icons">arrow_forward</div>
+              </div>
+            </div>
+            <!-- button -->
+            <form>
+                <div class="footer blocks-btn">
+                    <a href="/" class="btn btn-brown">확인</a>
+                </div>
+            </form>
+    </div>
+{% endblock %}
